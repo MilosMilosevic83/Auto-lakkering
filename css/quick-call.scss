@@ -1,0 +1,73 @@
+
+@import 'mixins.scss';
+@import 'variables.scss';
+
+.technology {
+  margin-top: 70px;
+  h2 {
+    font-family: $font-main;
+    border-bottom:3px solid #FFE500;
+    padding-bottom:15px;
+    margin:0 auto 20px auto;
+    text-align: left;
+
+  }
+  p {
+    color: #78797A;
+    font-size: 1.4em;
+    font-weight: 300;
+    font-family: $font-main;
+    padding:20px 0 0 0;
+    @include breakpoint(medium_screen1){
+      font-size: 1.1em;
+     }
+  }
+}
+.call-wrap {
+    display: table;
+    background: url(../img/quick-contact.png) no-repeat center center;
+    background-size:80%;
+    height: 40vh;
+    padding:250px 0;
+    @include breakpoint(big_screen2){
+      padding:150px 0;
+    }
+     @include breakpoint(medium_screen1){
+      margin-top:50px;
+      padding:50px 0;
+      background-size:100%;
+     }
+}
+.call {
+  display: table-cell;
+   vertical-align: middle; 
+
+   a {
+    display: block;
+    @extend %buttons;
+    margin-top: 0;
+    background:#343434;
+    color: #fff;
+    border:2px solid #343434;
+     position:relative;
+    padding-left:50px;
+    line-height: 30px;
+    &:before {
+      position:absolute;
+      content: url(../img/phone-white.png);
+      left: 20px;
+      top: 5px;
+    }
+    &:hover {
+      border:2px solid #030201;
+      background:#FFE500;
+      color: #353535;
+     }
+   }
+   p {
+    text-align: center;
+    color: #353535;
+    font-size: 1.4em;
+    font-family: $font-main;
+   }
+}

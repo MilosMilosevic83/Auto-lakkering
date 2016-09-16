@@ -1,0 +1,142 @@
+@import 'mixins.scss';
+@import 'variables.scss';
+
+.main-contact-wrap-bg {
+  margin-top:40px;
+  background:url(../img/footer-bg.jpg) no-repeat center center;
+  @include background_stretch;
+  padding:40px 0;
+  overflow: hidden;
+  @include breakpoint(medium_screen1){
+      padding:0;
+     }
+
+.foo-logo {
+  text-align: center;
+  padding:60px 0;
+  margin-top: 30px;
+
+  ul {
+    padding:0;
+    margin-bottom: 50px;
+  }
+  li {
+    display: inline-block;
+    list-style-type: none;
+
+  }
+  a {
+    color:#fff;
+    padding:15px;
+    display: block;
+  }
+  p {
+    color: #fff;
+  }
+}
+.all-services {
+  font-weight: 300;
+  font-family: $font-main;
+   padding:40px 0;
+  @include breakpoint(medium_screen1){
+      padding:0;
+     }
+  .table-wrap{
+
+    text-align: center;
+    padding:0;
+    margin: 0;
+    @include breakpoint(medium_screen1){
+      margin-top: 40px;
+     }
+    h3 {
+      font-size: 1.3em;
+      font-weight: 300;
+      color:#fff;
+      padding:20px 0 0 0;
+      margin:0;
+    }
+    img {
+    width: 70px;
+    height: 70px;
+    }
+  }
+}
+.cell {
+
+   margin:0;
+   padding:0;
+
+}
+
+.form-group {
+  color:#fff;
+  padding:0 0 0 50px;
+  width: 100%;
+  max-width: 520px;
+  font-family: $font-main;
+  margin-bottom: 0;
+  @include breakpoint(medium_screen1){
+      padding:0 15px;
+      margin:0 auto !important;
+    }
+    label {
+    font-family: $font-main;
+    font-size: 1em;
+    float: left;
+  }
+    input {
+    border-radius:0;
+    background:transparent;
+    color: #fff;
+  }
+
+}
+
+
+.form-group-text {
+  color:#fff;
+  padding:0 0 0 50px;
+  max-width: 520px;
+  width: 100%;
+  display: block;
+  clear: both;
+   @include breakpoint(medium_screen1){
+      margin:0 auto;
+      padding:0 15px;
+     }
+  label {
+    font-family: $font-main;
+    color: #fff;
+    font-size: 1em;
+    float: left;
+    }
+  textarea {
+    border-radius:0;
+    color: $main-blue;
+    background:transparent;
+    color: #fff;
+    }
+  }
+.form-control {
+
+     &:focus {
+      border-color: #fff;
+      @include box-shadow(none, false, false, false, false);
+    }
+}
+
+  .btn{
+    @extend %buttons;
+    border-radius:0;
+    border:0;
+    margin:20px auto;
+    max-width: 520px;
+    width: 100%;
+    float: none;
+     &:hover {
+      background: rgb(255,229,0);
+      color: #000;
+     }
+    }
+}

@@ -1,0 +1,56 @@
+@import 'mixins.scss';
+@import 'variables.scss';
+
+.main-about-wrap {
+  margin-top: 50px;
+}
+.about-wrap {
+  img {
+    width: 100%;
+    max-width: 450px;
+    display: block;
+    margin: 40px auto;
+  }
+}
+.about-us {
+  padding-top:150px;
+  p {
+    color: #78797A;
+    font-size: 1.4em;
+    font-weight: 300;
+    margin:15px auto 0 auto;
+    font-family: $font-main;
+    padding-left:80px;
+    @include breakpoint(medium_screen1){
+        padding-left:0;
+     }
+  }
+  a {
+    @extend %buttons;
+    margin:30px 0 0 80px !important;
+    background: #FFE500;
+     border:2px solid #FFE500;
+     line-height: 29px !important;
+     &:hover {
+      border:2px solid #030201;
+     }
+     @include breakpoint(medium_screen1){
+        margin:30px 0 0 0 !important;
+     }
+  }
+  h2 {
+    line-height: 60px;
+    font-family: $font-main;
+    margin-left:90px;
+    width: 230px;
+    border-bottom:3px solid #FFE500;
+    @include breakpoint(medium_screen1){
+        margin-left:0;
+     }
+  }
+    @include breakpoint(medium_screen1){
+        margin-top: 10px;
+        padding-top:0;
+     }
+
+}

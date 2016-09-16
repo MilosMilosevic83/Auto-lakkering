@@ -1,0 +1,36 @@
+@import 'mixins.scss';
+@import 'variables.scss';
+
+.brands-wrap {
+  background:#F7F7F7;
+  overflow: hidden;
+  width: 100%;
+  margin-top: 40px;
+  padding:0;
+}
+.brands {
+  margin-top: 40px;
+  padding:0;
+  div {
+    padding:0;
+  }
+  h2 {
+    font-family: $font-main;
+    width: 440px;
+    border-bottom:3px solid #FFE500;
+    padding-bottom:15px;
+    margin:0 auto 20px auto;
+    text-align: center;
+    @include breakpoint(medium_screen1){
+          width: 300px;
+     }
+  }
+  img {
+    display: block;
+    margin: 40px auto;
+     @include breakpoint(medium_screen1){
+        max-width: 120px !important;
+        margin: 20px auto;
+     }
+  }
+}

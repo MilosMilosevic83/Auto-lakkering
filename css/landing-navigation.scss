@@ -1,0 +1,125 @@
+
+@import 'mixins.scss';
+@import 'variables.scss';
+
+.navbar-fixed-top {
+  position: fixed;
+  right: 0 !important;
+  left:300px;
+  z-index: 1030;
+}
+
+.navbar-header {
+  background:rgb(14,17,26);
+ span {
+  display: block;
+  width:30px;
+  height: 7px;
+  margin:2px;
+  background:rgb(14,17,26);
+  border:1px solid #fff;
+    } 
+  } 
+
+.landing-bg {
+      background:url(../img/landing-bg.jpg) no-repeat top center;
+  @include background_stretch;
+  padding:0 0 7% 0;
+
+}
+.dektop-logo-menu-wrap {
+    width: 100%;
+    overflow: hidden;
+    font-family:$font-main; 
+    padding:0 0 40px 0;
+    position:relative;
+  }
+.desktop-logo-main {
+  position: absolute;
+  width: 150px;
+  height:60px;
+  top:15px;
+  left:0;
+  padding:15px;
+}
+.main-headline {
+    text-align: center;
+    padding-top:2.2%;
+
+    h1 {
+      font-weight:700;
+      font-size: 5.8em;
+      line-height: 60px;
+      color: #fff;
+      margin:14% 0 0 0;
+      clear: both;
+      font-family: $font-secondary;
+       @include breakpoint(medium_screen1){
+          font-size:8vw;
+          margin-top: 15%;
+          line-height: 20px;
+        }
+      span {
+        color: #FFE500;
+        font-weight: 700;
+        display: block;
+        font-size: 1.3em;
+        line-height: 40px;
+        line-height: 80px;
+      }
+    }
+    p {
+      color: #fff;      
+      &:nth-of-type(1) {
+        padding-top:30px;
+      }
+      &:nth-of-type(2) {
+        padding-top:30px;
+      }
+    }
+  }
+  .main-btn {
+    @extend %buttons;
+    position:relative;
+    padding-left:50px;
+    &:before {
+      position:absolute;
+      content: url(../img/phone.png);
+      left: 30px;
+      top: 10px;
+    }
+  }
+  .desktop-menu {
+    background:transparent;
+    @include breakpoint(medium_screen1){
+      display: none;
+      }
+    ul {
+      margin:0;
+      width: 100%;
+      max-width: 420px;
+      float: right;
+      display: table;
+    }
+    li {
+      display: inline-block;
+      display: table-cell;
+      text-align: center;
+      max-width: 100px;
+
+    }
+    a {
+      display: inline-block;
+      color: #fff;
+      padding:70px 0 10px 0;
+      font-size: 1.2em;
+      font-weight: 300;
+      width: 100%;
+      margin-top: -33px;
+    }
+  }
+  
+.active-btn {
+  background:#FFE500;
+  color: #10121F !important;
+}

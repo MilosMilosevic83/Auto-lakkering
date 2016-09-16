@@ -1,0 +1,39 @@
+.yellow-wrap {
+  background: #FFE500;
+}
+
+.yellow-wrap a:hover {
+  opacity: .5;
+}
+
+.main-head-wrap {
+  padding: 20px 0 0 0;
+  margin: -30px auto 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.left-headline {
+  color: #0C0C0C;
+  position: relative;
+  z-index: 1000;
+  padding-left: 0;
+  text-align: center;
+  padding: 15px;
+  overflow: hidden;
+  font-weight: 300;
+  font-family: "Open Sans", sans-serif;
+}
+
+.left-headline h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+}
+
+.shadow {
+  background: #FFE500;
+  -webkit-box-shadow: 0px -28px 20px 0px rgba(50, 50, 50, 0.11);
+  -moz-box-shadow: 0px -28px 20px 0px rgba(50, 50, 50, 0.11);
+  box-shadow: 0px -28px 20px 0px rgba(50, 50, 50, 0.11);
+}

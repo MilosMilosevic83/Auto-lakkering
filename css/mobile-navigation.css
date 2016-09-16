@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  border-top: 6px solid #FFE500;
+}
+
+.no-display {
+  display: none !important;
+}
+
+@media (max-width: 768px) {
+  .no-display {
+    display: block !important;
+  }
+}
+
+.nav-expander {
+  color: #FFFFFF;
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  height: 50px;
+  margin-right: 0;
+  padding: 1em 1.6em 2em;
+  position: absolute;
+  right: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  top: 20px;
+  z-index: 12;
+  -moz-transition: right 0.3s ease-in-out 0s;
+  -o-transition: right 0.3s ease-in-out 0s;
+  -webkit-transition: right 0.3s ease-in-out 0s;
+  transition: right 0.3s ease-in-out 0s;
+}
+
+.nav-expander.fixed {
+  position: fixed;
+}
+
+.nav-expanded {
+  margin-left: 0em;
+  -moz-transition: right 0.3s ease-in-out 0s;
+  -o-transition: right 0.3s ease-in-out 0s;
+  -webkit-transition: right 0.3s ease-in-out 0s;
+  transition: right 0.3s ease-in-out 0s;
+}
+
+.nav-expanded nav {
+  right: 0;
+}
+
+.nav-expanded .nav-expander.fixed {
+  right: 16em;
+}
+
+.nav-expanded .nav-expander:hover {
+  cursor: pointer;
+}
+
+#nav-close {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  padding-right: 10px;
+}
+
+.main-menu {
+  padding-top: 0;
+}
+
+.main-menu li {
+  border-bottom: 1px solid #e8e5e5;
+  margin-left: 20px;
+  font-size: 18px;
+  padding: 12px;
+}
+
+.main-menu li .sub-nav {
+  border-bottom: 0px;
+  padding: 4px;
+}
+
+.main-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: .9em;
+  font-family: "Open Sans", sans-serif;
+}
+
+.main-menu a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-inverse {
+  background: transparent;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  nav {
+    background: #0e111a;
+    display: block;
+    height: 100%;
+    overflow: auto;
+    position: fixed;
+    right: -22em;
+    font-size: 15px;
+    top: 0;
+    width: 16em;
+    z-index: 2000;
+    -moz-transition: right 0.3s ease-in-out 0s;
+    -o-transition: right 0.3s ease-in-out 0s;
+    -webkit-transition: right 0.3s ease-in-out 0s;
+    transition: right 0.3s ease-in-out 0s;
+  }
+}
